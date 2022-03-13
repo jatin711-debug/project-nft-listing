@@ -30,7 +30,6 @@ const TokenContextProvider = ({children})=>{
             console.log(error);
         }
     }
-
     return(
         <TokenContext.Provider value={{wallet,setWallet,walletData,FetchResults}} >
             {children}
