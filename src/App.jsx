@@ -1,9 +1,10 @@
-import React from 'react'
 
+import './App.css';
+import InputBar from './components/InputBar';
 const App = () => {
     return (
-        <div>
-            App!!!
+        <div className="container">
+            <InputBar/>
         </div>
     );
 }
