@@ -1,2 +1,2 @@
 # project-nft-listing
-<h1>NFT'S LISTOR</h1>
+<h1 style="align-text:center">NFT'S LISTOR</h1>
