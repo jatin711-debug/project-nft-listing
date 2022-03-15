@@ -13,6 +13,7 @@ const App = () => {
 
     const handelClick = (value)=>{
         setWallet(value);
+        console.log(value);
     }
 
     const handelChange = (value)=>{
