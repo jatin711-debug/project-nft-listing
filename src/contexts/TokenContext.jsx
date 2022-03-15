@@ -1,4 +1,4 @@
-import {useContext, createContext, useState} from 'react';
+import {useContext, createContext, useState, useEffect} from 'react';
 import data from '../../file.json'
 import axios from 'axios';
 const TokenContext = createContext();
@@ -10,8 +10,10 @@ const TokenContextProvider = ({children})=>{
     const [isLoading,setIsLoading] = useState(false);
     const [walletCount,setWalletCount] = useState(0);
     const apiKey = data.apiKey;
-
     const baseURL =  `https://eth-mainnet.alchemyapi.io/v2/${apiKey}/getNFTs/`
+    useEffect(() =>{
+        UTILS.setLocalStorage(wallet.toString(),JSON.stringify(walletData));
+    },[wallet])
 
     const FetchResults = async (walletContext) =>{
         setIsLoading(true);
@@ -28,7 +30,6 @@ const TokenContextProvider = ({children})=>{
                     console.log(response.data);
                     setWalletCount(response.data.totalCount);
                     setWalletData(response.data.ownedNfts);
-                    UTILS.setLocalStorage(walletContext.toString(),JSON.stringify(response.data));
                 })
                     .catch(error => console.log(error));
         } catch (error) {
