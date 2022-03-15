@@ -12,8 +12,8 @@ const TokenContextProvider = ({children})=>{
 
     const baseURL =  `https://eth-mainnet.alchemyapi.io/v2/${apiKey}/getNFTs/`
 
-    const FetchResults = async () =>{
-        
+    const FetchResults = async (walletContext) =>{
+        setWallet(walletContext);
         var config = {
             method: 'get',
             url: `${baseURL}?owner=${wallet}`

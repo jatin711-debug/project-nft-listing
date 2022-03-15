@@ -4,15 +4,15 @@ import logo from '../media/images/no-img.png'
 
 const Results = () => {
 
-    const { FetchResults, walletData, wallet } = useTokenContext();
+    const { FetchResults, walletData, wallet} = useTokenContext();
 
     const fetchData = async ()=>{
-        await FetchResults();
+        await FetchResults(wallet);
     }
 
     useEffect(()=>{
-        fetchData();
-    },[])
+        fetchData(wallet);
+    },[wallet])
 
     return (
         <div className="container">
