@@ -38,10 +38,6 @@ const TokenContextProvider = ({children})=>{
         setIsLoading(false);
     }
 
-    const filterNullImages = (images) =>{
-        const ownedNfts = [];
-
-    }
     return(
         <TokenContext.Provider value={{wallet,setWallet,walletData,FetchResults, isLoading, walletCount}} >
             {children}

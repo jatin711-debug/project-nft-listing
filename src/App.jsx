@@ -3,12 +3,12 @@ import InputBar from './components/InputBar';
 import Results from './components/Results';
 import {useTokenContext} from './contexts/TokenContext';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import './App.css';
 
 const App = () => {
 
     const [state,setState] = useState();
-
     const {setWallet} = useTokenContext(); 
 
     const handelClick = (value)=>{
@@ -21,6 +21,7 @@ const App = () => {
     }
     return (
         <div className="container">
+            <Navbar/>
             <InputBar handelClick={handelClick} handelChange={handelChange} setAddressState={setState} />
             <Results />
             <Footer/>
