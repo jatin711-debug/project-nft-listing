@@ -1,21 +1,27 @@
  const Navbar = () => {
     return (
-        <nav className="navbar navbar-dark bg-dark">
-        <div className="container-fluid">
-            <form className="d-flex input-group w-auto">
-            <input
-                type="search"
-                className="form-control rounded"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="search-addon"
-            />
-            <span className="input-group-text text-white border-0" id="search-addon">
-                <i className="fas fa-search"></i>
-            </span>
-            </form>
+        <>
+    <div class="container-navbar">
+        <div class="logo-main">
+        <h1>VITE</h1>
         </div>
-        </nav>
+        <div class="links-container">
+
+            <ul>
+                <li id="active-link"><a href="" title="Home">Home</a></li>
+                
+                <li><a href="" title="About Us">About</a></li>
+                <li><a href="" title="Services">Services</a></li>
+                <li class="login-icon" title="Login">
+                    
+                </li>
+                <div class="bottom-line"></div>
+            </ul>
+        </div>
+    </div>
+    
+
+        </>
     )
 }
 

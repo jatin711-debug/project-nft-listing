@@ -1,5 +1,109 @@
-
+@import url("https://use.typekit.net/hpw1iiu.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 body{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(76,28,48,1) 29%, rgba(157,78,142,1) 67%, rgba(176,65,65,1) 99%, rgba(0,212,255,1) 100%);
+}
+
+.logo-main>h1{
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Poppins",sans-serif;
+    font-size: 67px;
+    letter-spacing: 12px;
+    font-weight: 600;
+    color: rgba(223, 226, 17, 0.822);
+    position: absolute;
+    top: 7px;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0px 30px;
+    box-shadow:
+  5.8px 8px 3.6px rgba(0, 0, 0, 0.2),
+  16.2px 22px 10px rgba(0, 0, 0, -0.004),
+  38.9px 53.1px 24.1px rgba(0, 0, 0, -0.028),
+  129px 176px 80px rgba(0, 0, 0, -0.015)
+;
+    height:12vh;
+    padding:15px;
+    border:.5px solid white;
+    position: fixed;
+    width: 86vw;
+    transform: translate(10px, -155px);
+    z-index: 100;
+    background-color: #e84393;
+    background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+}
+.links-container>ul {
+    display: flex;
+    justify-content: space-between
+}
+.links-container>ul>li {
+    text-decoration: none;
+    cursor:pointer;
+}
+.links-container>ul>li>a {
+    text-decoration: none;
+    color:black
+}
+
+.links-container>ul>li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em;
+    font-size: 19px;
+    font-family: "poppins";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all .5s;
+}
+.links-container>ul>li:hover {
+    animation-name:  links;
+    animation-duration:1s;
+    animation-timing-function:ease-in-out;
+    animation-delay:.1s; 
+    color: rgba(228, 96, 35, 0.842);
+    background-color:rgba(0, 0, 0, 0.349);
+    border-bottom:5px solid rgba(166, 18, 224, 0.836);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.login-icon{
+    background-image: url(/src/media/images/login-icon.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+     position: relative;
+     top: 12px; 
+}
+.links-container>ul>li>a:hover{
+color: rgba(228, 96, 35, 0.842);
+    
+}
+
+.search-bar{
+    display: flex;
+    border: 3px solid rgba(132, 55, 221, 0.363);
+    width: 80vw;
+
+}
+.search-bar-main {
+    width: 80vw;
+    height: 6vh;
+    padding: 18px;
+    color:rgba(231, 81, 21, 0.87);
+    border:1px solid rgba(143, 130, 130, 0.849);
+    margin-left:2px;
+}
+.search-bar-icon {
+    width: 3vw;
+    height: 6vh;
+    background-image: url(/src/media/images/search-bar-icn.png);
+    background-repeat: no-repeat;
+    background-size:contain;
 }
