@@ -9,7 +9,7 @@ const InputBar = ({handelClick,handelChange}) => {
         <div className="container">
                 <div className="form-group d-flex justify-content-center align-items-center input-width">
                     <input onChange={(e)=>handelChange(e.target.value)} className="form-control" ref={data} placeholder="🔎 INPUT WALLET ADDRESS"/>
-                    <button onClick={()=>handelClick(data.current.value)} className="btn btn-primary m-5">SHOW NFT`S</button>
+                    <button onClick={()=>handelClick(data.current.value)} className="btn btn-primary m-5">SHOW All NFT`S</button>
                 </div>
         </div>
     );
