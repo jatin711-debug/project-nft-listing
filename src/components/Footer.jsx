@@ -1,13 +1,13 @@
 const Footer = () => {
     return (
     <div className="footer-main">
-            <div class="footer-clean">
+            <div className="footer-clean">
         <footer>
-            <div class="container">
+            <div className="container">
                 <div className="footer-heading"><h1>VITE</h1>
                 </div>
-                <div class="row justify-content-center footer-animations">
-                    <div class="col-sm-4 col-md-3 item">
+                <div className="row justify-content-center footer-animations">
+                    <div className="col-sm-4 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
                             <li><a href="#">Web design</a></li>
@@ -15,7 +15,7 @@ const Footer = () => {
                             <li><a href="#">Hosting</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 item">
+                    <div className="col-sm-4 col-md-3 item">
                         <h3>About</h3>
                         <ul>
                             <li><a href="#">Company</a></li>
@@ -23,7 +23,7 @@ const Footer = () => {
                             <li><a href="#">Legacy</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 item">
+                    <div className="col-sm-4 col-md-3 item">
                         <h3>Contact</h3>
                         <ul>
                             <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
@@ -37,8 +37,8 @@ const Footer = () => {
 </svg> Mail Us </a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">VITE © 2022</p>
+                    <div className="col-lg-3 item social"><a href="#"><i className="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p className="copyright">VITE © 2022</p>
                     </div>
                 </div>
             </div>
