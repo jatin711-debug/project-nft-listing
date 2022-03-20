@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/hpw1iiu.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
 body{
     
     background-image:linear-gradient(90deg, rgba(2,0,36,.5) 0%, rgba(76,28,48,.5) 29%, rgba(157,78,142,.7) 67%, rgba(176,65,65,.8) 99%, rgba(176,65,65,.8) 100%) ,url(../src/media/images/pattern.png);

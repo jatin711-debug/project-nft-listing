@@ -9,6 +9,7 @@ import './App.css';
 const App = () => {
 
     const [state,setState] = useState();
+    
     const {setWallet} = useTokenContext(); 
 
     const handelClick = (value)=>{
@@ -20,7 +21,7 @@ const App = () => {
         setState(value);
     }
     return (
-        <div className="container">
+        <div>
             <Navbar/>
             <InputBar handelClick={handelClick} handelChange={handelChange} setAddressState={setState} />
             <Results />

@@ -27,9 +27,9 @@ const TokenContextProvider = ({children})=>{
         try {
             await axios(config)
                 .then(response => {
-                    console.log(response.data);
+                    console.log(response.data.ownedNfts);
                     setWalletCount(response.data.totalCount);
-                    setWalletData(response.data.ownedNfts);
+                    setWalletData(filterData(response.data.ownedNfts));
                 })
                     .catch(error => console.log(error));
         } catch (error) {
@@ -37,6 +37,11 @@ const TokenContextProvider = ({children})=>{
         }
         setIsLoading(false);
     }
+
+    const filterData = (data) =>{
+        const filteredData = data.filter(d => d.metadata.image !== undefined && d.metadata.description !== undefined);
+        return filteredData;
+    };
 
     return(
         <TokenContext.Provider value={{wallet,setWallet,walletData,FetchResults, isLoading, walletCount}} >

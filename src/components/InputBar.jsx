@@ -12,7 +12,7 @@ const InputBar = ({handelClick,handelChange}) => {
                     {/* <button onClick={()=>handelClick(data.current.value)} className="btn btn-primary m-5 search-bar-icon"></button> */}
                 </div>
                 <div className="search-bar">
-        <input type="text" ref={data} onChange={(e)=>handelChange(e.target.value)} placeholder="Search your address &#128270"  class=" search-bar-main"></input>
+        <input type="text" ref={data} onChange={(e)=>handelChange(e.target.value)} placeholder="Search your address &#128270"  className=" search-bar-main"></input>
         <div ><button className="search-bar-icon btn btn-primary" title="Search" onClick={()=>handelClick(data.current.value)}></button ></div>
     </div>
         </div>
