@@ -3,7 +3,7 @@
         <>
     <div className="container-navbar">
         <div className="logo-main">
-        <h1>VITE</h1>
+        <h1 style={{textAlign:"center"}}>NFT'$ LISTOR</h1>
         </div>
         <div className="links-container">
 
@@ -13,7 +13,6 @@
                 <li><a href="" title="About Us">About</a></li>
                 <li><a href="" title="Services">Services</a></li>
                 <li className="login-icon" title="Login">
-                    
                 </li>
                 <div className="bottom-line"></div>
             </ul>

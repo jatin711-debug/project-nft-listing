@@ -1,5 +1,4 @@
 import {useContext, createContext, useState, useEffect} from 'react';
-import data from '../../file.json'
 import axios from 'axios';
 const TokenContext = createContext();
 import * as UTILS from '../utils/util';
@@ -9,15 +8,14 @@ const TokenContextProvider = ({children})=>{
     const [walletData,setWalletData] = useState([]);
     const [isLoading,setIsLoading] = useState(false);
     const [walletCount,setWalletCount] = useState(0);
-    const apiKey = data.apiKey;
+    const apiKey = import.meta.env.VITE_API_KEY;
     const baseURL =  `https://eth-mainnet.alchemyapi.io/v2/${apiKey}/getNFTs/`
     useEffect(() =>{
         UTILS.setLocalStorage(wallet.toString(),JSON.stringify(walletData));
-    },[wallet])
+    },[wallet]);
 
     const FetchResults = async (walletContext) =>{
         setIsLoading(true);
-        console.log("wallet updated"+walletContext);
         setWallet(walletContext);
         var config = {
             method: 'get',
@@ -27,7 +25,6 @@ const TokenContextProvider = ({children})=>{
         try {
             await axios(config)
                 .then(response => {
-                    console.log(response.data.ownedNfts);
                     setWalletCount(response.data.totalCount);
                     setWalletData(filterData(response.data.ownedNfts));
                 })
